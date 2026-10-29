@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Department of Computer Science and Engineering</title>
+  <style>
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f6fa;
+      color: #263445;
+      line-height: 1.6;
+  }
+
+  header {
+      background: #12365a;
+      color: white;
+      text-align: center;
+      padding: 30px;
+  }
+
+  header img {
+      width: 90px;
+  }
+
+  nav {
+      background: #f2b84b;
+      padding: 15px;
+      text-align: center;
+  }
+
+  nav a {
+      color: #12365a;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 12px;
+  }
+
+  main {
+      max-width: 1050px;
+      margin: 25px auto;
+      padding: 0 15px;
+  }
+
+  section {
+      background: white;
+      margin-bottom: 22px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px #d9e1eb;
+  }
+
+  h2 {
+      color: #12365a;
+      border-bottom: 3px solid #f2b84b;
+      padding-bottom: 8px;
+  }
+
+  table {
+      width: 100%;
+      border-collapse: collapse;
+  }
+
+  th, td {
+      border: 1px solid #d9e1eb;
+      padding: 12px;
+      text-align: left;
+  }
+
+  th {
+      background: #12365a;
+      color: white;
+  }
+
+  input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 12px;
+      box-sizing: border-box;
+  }
+
+  button {
+      background: #12365a;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+  }
+
+  footer {
+      background: #12365a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  footer a {
+      color: #f2b84b;
+  }
+
+  @media (max-width: 600px) {
+      nav a {
+          display: inline-block;
+          margin: 5px;
+      }
+
+      main {
+          margin: 12px auto;
+      }
+
+      section {
+          padding: 15px;
+          overflow-x: auto;
+      }
+
+      table {
+          font-size: 13px;
+      }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Department of Computer Science and Engineering</h1>
+  <p>Federal Institute of Science and Technology (FISAT)</p>
+  <img src="images/department-logo.svg" alt="Department logo" width="110">
+</header>
+<nav>
+  <a href="#about">About</a> | <a href="#programmes">Programmes</a> |
+  <a href="#faculty">Faculty</a> | <a href="#facilities">Facilities</a> |
+  <a href="#enquiry">Enquiry</a> | <a href="#contact">Contact</a>
+</nav>
+<main>
+<section id="about">
+  <h2>About the Department</h2>
+  <p>The Department of Computer Science and Engineering supports learning, innovation,
+  research, and professional development in computing.</p>
+  <p><strong>Our goal</strong> is to build strong technical foundations and
+  <em>encourage lifelong learning</em>.</p>
+  <p>Visit the <a href="https://www.fisat.ac.in/" target="_blank" rel="noopener noreferrer">official FISAT website</a>.</p>
+</section>
+<section id="programmes">
+  <h2>Academic Programmes and Subjects</h2>
+  <ol>
+    <li>Programming in C</li><li>Data Structures</li>
+    <li>Database Management Systems</li><li>Computer Networks</li>
+    <li>Operating Systems</li><li>Artificial Intelligence</li>
+  </ol>
+</section>
+<section id="faculty">
+  <h2>Faculty Members</h2>
+  <table border="1" cellpadding="8">
+    <caption>Sample Faculty Directory</caption>
+    <thead><tr><th scope="col">Name</th><th scope="col">Designation</th><th scope="col">Area of Specialization</th></tr></thead>
+    <tbody>
+      <tr><td>Dr. Anitha Menon</td><td>Professor</td><td>Artificial Intelligence</td></tr>
+      <tr><td>Prof. Rahul Nair</td><td>Associate Professor</td><td>Computer Networks</td></tr>
+      <tr><td>Dr. Meera Thomas</td><td>Assistant Professor</td><td>Data Science</td></tr>
+      <tr><td>Prof. Arun Joseph</td><td>Assistant Professor</td><td>Cybersecurity</td></tr>
+      <tr><td>Prof. Neha Varghese</td><td>Assistant Professor</td><td>Database Systems</td></tr>
+    </tbody>
+  </table>
+  <p><small>Faculty names and details are fictional examples for this assignment.</small></p>
+</section>
+<section id="facilities">
+  <h2>Facilities</h2>
+  <ul><li>Computer laboratories</li><li>Internet-enabled learning spaces</li>
+  <li>Project and innovation support</li><li>Library and digital resources</li>
+  <li>Technical clubs and student activities</li></ul>
+</section>
+<section id="enquiry">
+  <h2>Student Enquiry Form</h2>
+  <form action="#" method="post">
+    <label for="student-name">Full name:</label><br>
+    <input type="text" id="student-name" name="student_name" required><br><br>
+    <label for="email">Email address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="phone">Phone number:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9+\-\s]{7,15}" required><br><br>
+    <label for="course">Course preference:</label><br>
+    <select id="course" name="course" required>
+      <option value="">Choose a course</option>
+      <option value="btech-cse">B.Tech Computer Science and Engineering</option>
+      <option value="other">Other / Need guidance</option>
+    </select><br><br>
+    <label for="message">Question (optional):</label><br>
+    <textarea id="message" name="message" rows="4" cols="35"></textarea><br><br>
+    <button type="submit">Submit Enquiry</button>
+  </form>
+  <p><small>HTML alone does not send or store form submissions; a backend is required.</small></p>
+</section>
+<section id="contact">
+  <h2>Contact Details</h2>
+  <address>Department of Computer Science and Engineering<br>
+  Federal Institute of Science and Technology (FISAT)<br>Mookkannoor, Kerala, India<br>
+  Email: <a href="mailto:info@example.edu">info@example.edu</a></address>
+</section>
+</main>
+<footer><p>&copy; 2026 Department of Computer Science and Engineering.</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Learn HTML at MDN Web Docs</a></p></footer>
+</body>
+</html>
